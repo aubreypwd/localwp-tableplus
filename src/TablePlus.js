@@ -294,7 +294,8 @@ export default class TablePlus extends React.Component {
 	 * @return {boolean} Test response.
 	 */
 	hasTablePlus () {
-		return fs.existsSync('/Applications/TablePlus.app');
+		return fs.existsSync('/Applications/TablePlus.app') ||
+			fs.existsSync('/Applications/Setapp/TablePlus.app');
 	}
 
 	/**
